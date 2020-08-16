@@ -4,7 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 
-namespace nifanfa.Font
+namespace nifanfa.CosmosDrawString
 {
     public static class ASC16
     {
