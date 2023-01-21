@@ -13,7 +13,7 @@ namespace nifanfa.CosmosDrawString
 
         //Note: the size of font is 8*16
         
-        public static void DrawACSIIString(this Canvas canvas, Pen pen, string s, int x, int y)
+        public static void DrawACSIIString(this Canvas canvas, Color color, string s, int x, int y)
         {
             //ASCII
             string[] lines = s.Split('\n');
@@ -32,7 +32,7 @@ namespace nifanfa.CosmosDrawString
                         {
                             if ((fontbuf[i] & (0x80 >> j)) != 0)
                             {
-                                canvas.DrawPoint(pen, (x + j) + (c * 8), y + i + (l * 16));
+                                canvas.DrawPoint(color, (x + j) + (c * 8), y + i + (l * 16));
                             }
                         }
                     }
